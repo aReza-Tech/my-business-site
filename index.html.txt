@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ali's Tech Sales</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+    }
+
+    header {
+      background-color: #1f1f1f;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem 1rem;
+      gap: 1rem;
+    }
+
+    .product {
+      background-color: #1e1e1e;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 300px;
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+      transition: transform 0.2s ease;
+    }
+
+    .product:hover {
+      transform: scale(1.03);
+    }
+
+    .product img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .product-content {
+      padding: 1rem;
+    }
+
+    .product-content h3 {
+      margin: 0 0 0.5rem;
+    }
+
+    .product-content p {
+      margin: 0;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #1f1f1f;
+      padding: 1rem;
+    }
+
+    @media (min-width: 600px) {
+      .product {
+        flex: 1 1 calc(33% - 2rem);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ali's Tech Sales</h1>
+    <p>Quality custom PCs and parts at great prices</p>
+  </header>
+
+  <section class="products">
+    <a class="product" href="product1.html">
+      <img src="images/pc1.jpg" alt="Gaming PC">
+      <div class="product-content">
+        <h3>Gaming PC - Ryzen 5 / RX 580</h3>
+        <p>$450</p>
+      </div>
+    </a>
+    
+    <a class="product" href="product2.html">
+      <img src="images/pc2.jpg" alt="High-End PC">
+      <div class="product-content">
+        <h3>High-End Build - 4080 / 9800X3D</h3>
+        <p>$3250</p>
+      </div>
+    </a>
+  </section>
+
+  <footer>
+    <p>Contact:   (209) 447-3696</p>
+    <p>Facebook: @Reza Ahmedi</p>
+  </footer>
+
+</body>
+</html>
